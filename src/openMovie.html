@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-mainPage">
+    <nav class="wrapper bg-transparent flex justify-between sticky top-5">
+        
+        <div class=" flex items-center gap-8 w-full navbar:w-fit justify-between ">
+            <div class="w-[116px] lg:w-[199px]">
+                <img src="./assets/Home/navbar/Logo.svg" alt="logo image" class="w-full">
+            </div>
+            <div id="menu-toggle" class="block navbar:hidden">
+                <button>
+                  <img src="./assets/Home/navbar/Icon.svg" alt="menu toggle">
+              </button>  
+              </div>
+          
+        </div>
+        <div id="menu" class="hidden navbar:flex items-center justify-between w-fit lg:w-full flex-col lg:flex-row absolute top-[50px] right-0
+        lg:static">
+                <ul class="flex gap-5 lg:gap-[30px] items-center lg:ms-[20%] flex-wrap flex-col navbar:flex-row py-3 px-5 bg-slate-500 lg:bg-[#0F0F0F] rounded-l lg:rounded border border-mainbutton">
+                    <li class="m-3">
+                        <a href="./index.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Home</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./Movies&Shows.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Movies & Shows</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./support.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Support</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./subscription.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Subscriptions</a>
+                    </li>
+                </ul>
+            <div class="flex gap-[30px] justify-center border-t rounded-l lg:border-none lg:rounded-none bg-slate-500 lg:bg-transparent">
+                <button class="size-[26px]">
+                    <img src="./assets/Home/navbar/search.svg" alt="search logo">
+                </button>
+                <button class="size-[26px]">
+                    <img src="./assets/Home/navbar/notifications.svg" alt="notifications logo">
+                </button>
+            </div>
+        
+        
+       
+    </div>
+    
+
+</nav>
+
+
+
+
+<header class="wrapper">
+    <div style="background-image: url('./assets/Movies&Shows/main/openMovie/header.svg');" class="bg-cover bg-center h-screen w-full mt-10 rounded-lg">
+        <div class="flex flex-col justify-end items-center h-full w-[75%] m-auto text-center mb-[30%]">
+            <h1 class="font-bold text-2xl md:text-[38px] text-white opacity-100 mb-1 md:mb-5">Kantara</h1>
+            <p class="hidden md:flex font-medium text-base labtop:text-lg">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands. </p>
+            <div class="flex items-center flex-wrap justify-center gap-5 mt-5 md:mt-[30px]">
+                <div class="">
+                    <button class="flex items-center justify-center gap-1 bg-secondarybutton rounded py-4 md:py-[14px] w-[310px] md:w-[157px] hover:scale-105 duration-200">
+                        <img src="./assets/Movies&Shows/header/Icon.svg" alt="" class="size-7 ">
+                        <p class="text-white font-semibold text-sm md:text-lg">Play Now</p>
+                    </button>
+                </div>
+                <div class="flex gap-[10px]">
+                    <button class="bg-[#0F0F0F] rounded p-4 md:p-[14px] hover:scale-105 duration-200">
+                        <img src="./assets/Movies&Shows/header/add.svg" alt="">
+                    </button>
+                    <button class="bg-[#0F0F0F] rounded p-4 md:p-[14px] hover:scale-105 duration-200">
+                        <img src="./assets/Movies&Shows/header/like.svg" alt="">
+                    </button>
+                    <button class="bg-[#0F0F0F] rounded p-4 md:p-[14px] hover:scale-105 duration-200">
+                        <img src="./assets/Movies&Shows/header/headset.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="wrapper">
+
+    <section>
+    <div class="grid grid-cols-1 md:grid-cols-3">
+       
+        <div class="col-span-1 md:col-span-2">
+        <div class="mt-24 bg-mainbutton rounded col-span-1 md:col-span-2">
+                <div class="p-[50px]">
+                    <p class="font-medium text-sm md:text-lg mb-2 md:mb-[14px]">Description</p>
+                    <p class="text-white font-medium text-sm md:text-lg">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+                </div>
+        </div>
+        <div class="bg-mainbutton rounded mt-[30px] col-span-1 md:col-span-2">
+           <div class="flex items-center justify-between px-6 md:px-14 pt-6 pb-4 mx-7">
+            <p class="font-medium text-sm md:text-lg">Cast</p>
+            <div class="flex items-center justify-between gap-2 md:gap-[10px]">
+                <button class="bg-mainPage rounded-full hover:bg-secondarybutton duration-200">
+                    <img src="./assets/Home/main/categories/left.svg" alt="" class="size-[20px] md:size-6 m-3 md:m-[14px]">
+                </button>
+                <button class="bg-mainPage rounded-full hover:bg-secondarybutton duration-200">
+                    <img src="./assets/Home/main/categories/right.svg" alt="" class="size-[20px] md:size-6 m-3 md:m-[14px]">
+                </button>
+            </div>
+           </div>
+           <div class="grid grid-cols-4 md:grid-cols-8 justify-center gap-[10px] md:gap-3 px-[50px] pt-2 md:pt-[30px] pb-6 md:pb-[50px]">
+                <img src="./assets/Movies&Shows/main/openMovie/main/1.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/2.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/3.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/4.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/5.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/6.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/7.svg" alt="">
+                <img src="./assets/Movies&Shows/main/openMovie/main/8.svg" alt="">
+           </div>
+        </div>
+        <div class="bg-mainbutton rounded mt-[30px] col-span-1 md:col-span-2">
+           
+            <div class="flex items-center justify-between mx-6 my-6 md:mx-12 md:mt-12 md:mb-10">
+                <p class="font-medium text-sm md:text-lg py-[13px] md:py-[15px] pr-[13px] md:pr-[14px]">Reviews</p>
+                <button class="flex items-center justify-between bg-mainPage rounded gap-1 px-3 md:px-4 py-[13px] md:py-[15px] mt-6 md:mt-[50px] hover:bg-secondarybutton duration-200">
+                    <img src="./assets/Movies&Shows/header/add.svg" alt="">
+                    <span class="text-white font-medium text-sm md:text-lg">Add Your Review</span>
+                </button>
+            </div>
+
+            <div id="default-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-80 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-40">
+                                    <div class="bg-mainPage rounded m-6 md:my-[30px] md:ms-10">
+                                        <div class="flex items-center justify-between  mb-4 md:mb-5">
+                                            <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                                <h5 class="text-white font-medium text-base md:text-xl">Aniket Roy</h5>
+                                                <p class="font-medium text-sm md:text-lg">From India</p>
+                                            </div>
+                                            <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                                <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                                <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                                        </div>
+                                    </div>
+                                    <div class="hidden md:block bg-mainPage rounded m-6 md:my-[30px] md:ms-10 ">
+                                        <div class="flex items-center justify-between gap-10 mb-4 md:mb-5">
+                                            <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                                <h5 class="text-white font-medium text-base md:text-xl">Swaraj</h5>
+                                                <p class="font-medium text-sm md:text-lg">From India</p>
+                                            </div>
+                                            <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                                <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                                <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-40">
+                            <div class="bg-mainPage rounded m-6 md:my-[30px] md:ms-10">
+                                <div class="flex items-center justify-between  mb-4 md:mb-5">
+                                    <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                        <h5 class="text-white font-medium text-base md:text-xl">Aniket Roy</h5>
+                                        <p class="font-medium text-sm md:text-lg">From India</p>
+                                    </div>
+                                    <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                        <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block bg-mainPage rounded m-6 md:my-[30px] md:ms-10 ">
+                                <div class="flex items-center justify-between gap-10 mb-4 md:mb-5">
+                                    <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                        <h5 class="text-white font-medium text-base md:text-xl">Swaraj</h5>
+                                        <p class="font-medium text-sm md:text-lg">From India</p>
+                                    </div>
+                                    <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                        <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center">
+                                    <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-40">
+                            <div class="bg-mainPage rounded m-6 md:my-[30px] md:ms-10">
+                                <div class="flex items-center justify-between  mb-4 md:mb-5">
+                                    <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                        <h5 class="text-white font-medium text-base md:text-xl">Aniket Roy</h5>
+                                        <p class="font-medium text-sm md:text-lg">From India</p>
+                                    </div>
+                                    <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                        <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block bg-mainPage rounded m-6 md:my-[30px] md:ms-10 ">
+                                <div class="flex items-center justify-between gap-10 mb-4 md:mb-5">
+                                    <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                        <h5 class="text-white font-medium text-base md:text-xl">Swaraj</h5>
+                                        <p class="font-medium text-sm md:text-lg">From India</p>
+                                    </div>
+                                    <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                        <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center">
+                                    <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-40">
+                            <div class="bg-mainPage rounded m-6 md:my-[30px] md:ms-10">
+                                <div class="flex items-center justify-between  mb-4 md:mb-5">
+                                    <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                        <h5 class="text-white font-medium text-base md:text-xl">Aniket Roy</h5>
+                                        <p class="font-medium text-sm md:text-lg">From India</p>
+                                    </div>
+                                    <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                        <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block bg-mainPage rounded m-6 md:my-[30px] md:ms-10 ">
+                                <div class="flex items-center justify-between gap-10 mb-4 md:mb-5">
+                                    <div class="flex flex-col items-start mt-6 md:mt-10 ms-6 md:ms-10">
+                                        <h5 class="text-white font-medium text-base md:text-xl">Swaraj</h5>
+                                        <p class="font-medium text-sm md:text-lg">From India</p>
+                                    </div>
+                                    <div class="flex items-center gap-[2px] md:gap-1 bg-mainbutton rounded-full mt-8 me-6">
+                                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="ps-2 md:ps-[10px] py-2 md:py-[11px]">
+                                        <p class="font-medium text-sm md:text-lg pe-2 md:pe-[10px] py-1 md:py-[6px]">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center">
+                                    <p class="font-normal text-sm md:text-base mx-6 md:mx-10 mb-6 md:mb-[30px]">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-4 h-1 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-4 h-1 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-4 h-1 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-4 h-1 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute bottom-0 start-0 z-30 flex items-end justify-center w-[50%] h-full px-4 cursor-pointer group focus:outline-none " data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute bottom-0 end-0 z-30 flex items-end justify-center w-[50%] h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-span-1 bg-mainbutton rounded mt-[30px] md:mt-24 md:ms-[30px]">
+           <div class="flex flex-col items-start justify-start mx-6 md:mx-[50px] mt-6 md:mt-[50px] gap-[10px] md:gap-[15px]">
+            <div class="flex items-center gap-[2px] md:gap-1">
+                <img src="./assets/Movies&Shows/main/openMovie/main/year.svg" alt="">
+                <p class="font-medium text-sm md:text-lg">Released Year</p>
+            </div>
+            <h5 class="text-white font-semibold text-base md:text-xl">2022</h5>
+           </div>
+           <div class="flex flex-col items-start justify-start mx-6 md:mx-[50px] mt-6 md:mt-[50px] gap-[10px] md:gap-[15px]">
+                <div class="flex items-center gap-[2px] md:gap-1">
+                    <img src="./assets/Movies&Shows/main/openMovie/main/languages.svg" alt="">
+                    <p class="font-medium text-sm md:text-lg">Available Languages</p>
+                </div>
+                <div class="flex items-center flex-wrap gap-[10px]">
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">English</h5>
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">Hindi</h5>
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">Tamil</h5>
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">Telegu</h5>
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">Kannada</h5>
+                </div>
+           </div>
+           <div class="flex flex-col items-start justify-start mx-6 md:mx-[50px] mt-6 md:mt-[50px] gap-[10px] md:gap-[15px]">
+            <div class="flex items-center gap-[2px] md:gap-1">
+                <img src="./assets/Movies&Shows/main/openMovie/main/rating.svg" alt="">
+                <p class="font-medium text-sm md:text-lg">Ratings</p>
+            </div>
+            <div class="flex items-center justify-between flex-wrap gap-4 md:gap-5">
+               <div class="flex flex-col items-start bg-mainPage rounded gap-[2px] md:gap-1">
+                    <h5 class="text-white font-semibold text-sm md:text-xl px-3 md:px-4 pt-3 md:pt-4">IMDb</h5>
+                    <div class="flex items-center px-3 md:px-4 pb-3 md:pb-4">
+                        <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="w-32 h-6">
+                        <span class="text-white font-medium text-sm md:text-xl">4.5</span>
+                    </div>
+               </div>
+               <div class="flex flex-col items-start bg-mainPage rounded gap-[2px] md:gap-1">
+                <h5 class="text-white font-semibold text-sm md:text-xl px-3 md:px-4 pt-3 md:pt-4">Streamvibe</h5>
+                <div class="flex items-center px-3 md:px-4 pb-3 md:pb-4">
+                    <img src="./assets/Movies&Shows/main/movies/mustWatches/rating.svg" alt="" class="w-32 h-6">
+                    <span class="text-white font-medium text-sm md:text-xl">4.5</span>
+                </div>
+           </div>
+            </div>
+             </div>
+             <div class="flex flex-col items-start justify-start mx-6 md:mx-[50px] mt-6 md:mt-[50px] gap-[10px] md:gap-[15px]">
+                <div class="flex items-center gap-[2px] md:gap-1">
+                    <img src="./assets/Movies&Shows/main/openMovie/main/gernes.svg" alt="">
+                    <p class="font-medium text-sm md:text-lg">Gernes</p>
+                </div>
+                <div class="flex items-center flex-wrap gap-[10px]">
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">Action</h5>
+                    <h5 class="bg-mainPage rounded font-medium text-white text-sm md:text-lg px-3 py-[6px] md:py-2 md:px-[14px]">Adventure</h5>
+                </div>
+           </div>
+           <div class="flex flex-col items-start justify-start mx-6 md:mx-[50px] mt-6 md:mt-[50px] gap-[10px] md:gap-[15px]">
+                <p class="font-medium text-sm md:text-lg">Director</p>
+            
+            <div class="bg-mainPage rounded flex gap-2 md:gap-[10px] w-full">
+                <img src="./assets/Movies&Shows/main/openMovie/main/3.svg" alt="" class="size-12 md:size-14 my-[10px] md:my-[14px] ms-[10px] md:ms-[14px]">
+                <div class="flex flex-col justify-center mt-3 me-[10px] md:mt-[18px] md:me-[14px]">
+                    <h5 class="text-white font-medium text-base md:text-lg">Rishab Shetty</h5>
+                    <p class="font-medium text-sm md:text-base">From India</p>
+                </div>
+            </div>
+       </div>
+
+       <div class="flex flex-col items-start justify-start mx-6 md:mx-[50px] mt-6 md:mt-[50px] gap-[10px] md:gap-[15px] pb-6 md:pb-[50px]">
+        <p class="font-medium text-sm md:text-lg">Music</p>
+    
+    <div class="bg-mainPage rounded flex gap-2 md:gap-[10px] w-full">
+        <img src="./assets/Movies&Shows/main/openMovie/main/6.svg" alt="" class="size-12 md:size-14 my-[10px] md:my-[14px] ms-[10px] md:ms-[14px]">
+        <div class="flex flex-col justify-center mt-3 me-[10px] md:mt-[18px] md:me-[14px]">
+            <h5 class="text-white font-medium text-base md:text-lg">B. Ajaneesh Loknath</h5>
+            <p class="font-medium text-sm md:text-base">From India</p>
+        </div>
+    </div>
+</div>
+        </div>
+       
+       
+    </div>
+       
+    </section>
+
+    <section class="mt-20 md:mt-36">
+            
+        <div style="background-image: url('./assets/Home/main/Free.png');" class="h-96 bg-center rounded flex">
+                <div class="flex flex-col md:flex-row items-center  justify-center md:justify-between w-full">
+                    <div class="flex flex-col items-center md:items-start justify-center text-center gap-[10px] md:gap-[14px] mt-[100px] mb-[50px] ms-10 md:ms-20 h-fit">
+                        <h2 class="text-white font-bold text-2xl md:text-5xl">Start your free trial today!</h2>
+                        <p class="text-sm md:text-lg font-light">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                    </div>
+                    <button class="text-white font-semibold text-sm md:text-lg bg-secondarybutton rounded me-0 md:me-20 py-[14px] md:py-[18px] px-5 md:px-6 hover:scale-105 duration-300">
+                        Start a Free Trail
+                    </button>
+                </div>
+            </div>
+    
+    </section>
+</main>
+
+<footer class="bg-[#0F0F0F] mt-20 md:mt-36 overflow-hidden">
+    <div class="wrapper grid grid-cols-2 sm:grid-cols-3 labtop:grid-cols-6 items-center justify-center">
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-12 md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Home</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Categories</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Devices</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Pricing</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-12 md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Movies</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Gernes</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Trending</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">New Release</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Popular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Shows</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Gernes</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Trending</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">New Release</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Popular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Support</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Subscription</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Plans</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Connect With Us</h5>
+            <ul class="flex justify-start items-center flex-wrap gap-[14px]">
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-700 hover:rounded duration-300"><img src="./assets/Home/footer/facebook.svg" alt=""></a>
+                </li>
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-400 hover:rounded duration-300"><img src="./assets/Home/footer/twitter.svg" alt=""></a>
+                </li>
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-700 hover:rounded duration-300"><img src="./assets/Home/footer/linkin.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>

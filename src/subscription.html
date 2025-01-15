@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-mainPage">
+    <nav class="wrapper bg-transparent flex justify-between sticky top-5">
+        
+        <div class=" flex items-center gap-8 w-full navbar:w-fit justify-between ">
+            <div class="w-[116px] lg:w-[199px]">
+                <img src="./assets/Home/navbar/Logo.svg" alt="logo image" class="w-full">
+            </div>
+            <div id="menu-toggle" class="block navbar:hidden">
+                <button>
+                  <img src="./assets/Home/navbar/Icon.svg" alt="menu toggle">
+              </button>  
+              </div>
+          
+        </div>
+        <div id="menu" class="hidden navbar:flex items-center justify-between w-fit lg:w-full flex-col lg:flex-row absolute top-[50px] right-0
+        lg:static">
+                <ul class="flex gap-5 lg:gap-[30px] items-center lg:ms-[20%] flex-wrap flex-col navbar:flex-row py-3 px-5 bg-slate-500 lg:bg-[#0F0F0F] rounded-l lg:rounded border border-mainbutton">
+                    <li class="m-3">
+                        <a href="./index.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Home</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./Movies&Shows.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Movies & Shows</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./support.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Support</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./subscription.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Subscriptions</a>
+                    </li>
+                </ul>
+            <div class="flex gap-[30px] justify-center border-t rounded-l lg:border-none lg:rounded-none bg-slate-500 lg:bg-transparent">
+                <button class="size-[26px]">
+                    <img src="./assets/Home/navbar/search.svg" alt="search logo">
+                </button>
+                <button class="size-[26px]">
+                    <img src="./assets/Home/navbar/notifications.svg" alt="notifications logo">
+                </button>
+            </div>
+        
+        
+       
+    </div>
+    
+
+</nav>
+
+<main class="wrapper">
+    <section class="mt-20 md:mt-36">
+        <div class="flex items-center justify-between flex-wrap ">
+            <div>
+                <h2 class="text-2xl md:text-5xl">
+                    Choose the plan that's right for you
+                </h2>
+                <p class="mobile:text-sm md:text-sm mt-3">
+                    Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!
+                </p>
+            </div>
+            <div class="flex items-center bg-mainbutton rounded mt-3 labtop:mt-0">
+                <button class="m-[10px] bg-mainPage rounded py-[14px] px-6 hover:bg-mainbutton duration-300">Monthly</button>
+                <button class="m-[10px] py-[14px] px-6 hover:bg-mainPage hover:rounded transition-all duration-300">Yearly</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[30px] labtop:grid-cols-3 mt-10 md:mt-20">
+            <div class="bg-mainbutton rounded">
+                <div class="flex flex-col gap-[10px] md:gap-4 p-6 md:p-[50px]">
+                    <h3 class="text-white font-bold text-lg md:text-2xl">Basic Plan</h3>
+                    <p class="text-sm md:text-lg">Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                </div>
+                <p class="text-white px-6 md:px-[50px] font-semibold text-2xl md:text-[40px]">$9.99<span class="text-[#999999] font-medium text-sm md:text-lg">/month</span></p>
+                <div class="flex items-center gap-3 md:gap-5 p-6 md:p-[50px]">
+                    <button class="text-white bg-mainPage font-semibold text-sm md:text-lg rounded py-[14px] md:py-[18px] px-[25px] md:px-[35px] hover:scale-105 duration-300">Start Free Trial</button>
+                    <button class="text-white bg-secondarybutton font-semibold text-sm md:text-lg rounded py-[14px] md:py-[18px] px-[25px] md:px-[35px] hover:scale-105 duration-300">Choose Plan</button>
+                </div>
+            </div>
+            <div class="bg-mainbutton rounded">
+                <div class="flex flex-col gap-[10px] md:gap-4 p-6 md:p-[50px]">
+                    <h3 class="text-white font-bold text-lg md:text-2xl">Standard Plan</h3>
+                    <p class="text-sm md:text-lg">Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                </div>
+                <p class="text-white px-6 md:px-[50px] font-semibold text-2xl md:text-[40px]">$12.99<span class="text-[#999999] font-medium text-sm md:text-lg">/month</span></p>
+                <div class="flex items-center gap-3 md:gap-5 p-6 md:p-[50px]">
+                    <button class="text-white bg-mainPage font-semibold text-sm md:text-lg rounded py-[14px] md:py-[18px] px-[25px] md:px-[35px] hover:scale-105 duration-300">Start Free Trial</button>
+                    <button class="text-white bg-secondarybutton font-semibold text-sm md:text-lg rounded py-[14px] md:py-[18px] px-[25px] md:px-[35px] hover:scale-105 duration-300">Choose Plan</button>
+                </div>
+            </div>
+            <div class="bg-mainbutton rounded">
+                <div class="flex flex-col gap-[10px] md:gap-4 p-6 md:p-[50px]">
+                    <h3 class="text-white font-bold text-lg md:text-2xl">Premium Plan</h3>
+                    <p class="text-sm md:text-lg">Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                </div>
+                <p class="text-white px-6 md:px-[50px] font-semibold text-2xl md:text-[40px]">$14.99<span class="text-[#999999] font-medium text-sm md:text-lg">/month</span></p>
+                <div class="flex items-center gap-3 md:gap-5 p-6 md:p-[50px]">
+                    <button class="text-white bg-mainPage font-semibold text-sm md:text-lg rounded py-[14px] md:py-[18px] px-[25px] md:px-[35px] hover:scale-105 duration-300">Start Free Trial</button>
+                    <button class="text-white bg-secondarybutton font-semibold text-sm md:text-lg rounded py-[14px] md:py-[18px] px-[25px] md:px-[35px] hover:scale-105 duration-300">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 md:mt-36">
+        <h2 class="text-white font-bold text-2xl md:text-5xl">Compare our plans and find the right one for you</h2>
+        <p class="font-light text-sm md:text-lg mt-3">StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.</p>
+        
+        <div class="bg-[#0F0F0F] rounded-lg flex justify-center items-center flex-wrap mt-10 sm:hidden">
+            <button id="basicButton" class="py-3 px-9 font-medium text-sm hover:bg-[#1F1F1F] hover:rounded hover:py-2 hover:px-7 duration-200">
+                Basic
+            </button>
+            <button id="standardButton" class="py-3 px-9 font-medium text-sm hover:bg-[#1F1F1F] hover:rounded hover:py-2 hover:px-7 duration-200">
+                Standard
+            </button>
+            <button id="premiumButton" class="py-3 px-9 font-medium text-sm hover:bg-[#1F1F1F] hover:rounded hover:py-2 hover:px-7 duration-200">
+                Premium
+            </button>
+        </div>
+        <div id="standard" class="bg-[#0F0F0F] rounded-lg mt-5 sm:hidden">
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Price</p>
+                    <span class="text-white font-medium text-sm">$12.99/Month</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Free Trail</p>
+                    <span class="text-white font-medium text-sm">7 Days</span>
+                </div>
+            </div>
+            <div class="flex items-center pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Content</p>
+                    <span class="text-white font-medium text-sm">Access to a wider selection of movies and shows, including most new releases and exclusive content</span>
+                </div>
+            </div>
+            <div class="flex items-center pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Devices</p>
+                    <span class="text-white font-medium text-sm">Watch on Two device simultaneously</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Cancel Anytime</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">HDR</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Dolby Atmos</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Ad - Free</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between py-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Offline Viewing</p>
+                    <span class="text-white font-medium text-sm">Yes, for select titles.</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Family Sharing</p>
+                    <span class="text-white font-medium text-sm">5 family members.</span>
+                </div>
+            </div>
+        </div>
+        <div id="basic" class="bg-[#0F0F0F] rounded-lg mt-5 hidden ">
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Price</p>
+                    <span class="text-white font-medium text-sm">$9.99/Month</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Free Trail</p>
+                    <span class="text-white font-medium text-sm">7 Days</span>
+                </div>
+            </div>
+            <div class="flex items-center pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Content</p>
+                    <span class="text-white font-medium text-sm">Access to a wide selection of movies and shows, including some new releases.</span>
+                </div>
+            </div>
+            <div class="flex items-center pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Devices</p>
+                    <span class="text-white font-medium text-sm">Watch on one device simultaneously</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Cancel Anytime</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">HDR</p>
+                    <span class="text-white font-medium text-sm">No</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Dolby Atmos</p>
+                    <span class="text-white font-medium text-sm">No</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Ad - Free</p>
+                    <span class="text-white font-medium text-sm">No</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between py-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Offline Viewing</p>
+                    <span class="text-white font-medium text-sm">No</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Family Sharing</p>
+                    <span class="text-white font-medium text-sm">No</span>
+                </div>
+            </div>
+        </div>
+        <div id="premium" class="bg-[#0F0F0F] rounded-lg mt-5 hidden">
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Price</p>
+                    <span class="text-white font-medium text-sm">$14.99/Month</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Free Trail</p>
+                    <span class="text-white font-medium text-sm">7 Days</span>
+                </div>
+            </div>
+            <div class="flex items-center pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Content</p>
+                    <span class="text-white font-medium text-sm">Access to a widest selection of movies and shows, including all new releases and Offline Viewing</span>
+                </div>
+            </div>
+            <div class="flex items-center pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Devices</p>
+                    <span class="text-white font-medium text-sm">Watch on Four device simultaneously</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Cancel Anytime</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">HDR</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Dolby Atmos</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Ad - Free</p>
+                    <span class="text-white font-medium text-sm">Yes</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between py-6 px-6">
+                <div class="flex flex-col gap-1">
+                    <p class="font-medium text-sm">Offline Viewing</p>
+                    <span class="text-white font-medium text-sm">Yes, for all titles.</span>
+                </div>
+                <div class="flex flex-col gap-1>
+                    <p class="font-medium text-sm">Family Sharing</p>
+                    <span class="text-white font-medium text-sm">Yes, up to 6 family members.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden sm:block overflow-x-auto">
+            <table class=" w-full border-collapse border border-[#999999] mt-20 text-sm text-[#999999]">
+              <thead class="bg-[#0F0F0F] text-gray-300">
+                <tr>
+                  <th class="border border-[#999999] px-4 py-4 text-left font-semibold text-xl text-white">Features</th>
+                  <th class="border border-[#999999] px-4 py-4 text-left font-semibold text-xl text-white">Basic</th>
+                  <th class="border border-[#999999] px-4 py-4 text-left font-semibold text-xl text-white">Standard <span class="bg-secondarybutton text-white font-medium text-sm px-2 py-1 rounded">Popular</span></th>
+                  <th class="border border-[#999999] px-4 py-4 text-left font-semibold text-xl text-white">Premium</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <th class="border border-[#999999] px-4 py-4 text-left">Price</th>
+                  <td class="border border-[#999999] px-4 py-4">$9.99/Month</td>
+                  <td class="border border-[#999999] px-4 py-4">$12.99/Month</td>
+                  <td class="border border-[#999999] px-4 py-4">$14.99/Month</td>
+                </tr>
+                <tr>
+                  <th class="border border-[#999999] px-4 py-4 text-left">Content</th>
+                  <td class="border border-[#999999] px-4 py-4">Access to a wide selection of movies and shows, including some new releases.</td>
+                  <td class="border border-[#999999] px-4 py-4">Access to a wider selection of movies and shows, including most new releases and exclusive content.</td>
+                  <td class="border border-[#999999] px-4 py-4">Access to the widest selection of movies and shows, including all new releases and Offline Viewing.</td>
+                </tr>
+                <tr class="">
+                  <th class="border border-[#999999] px-4 py-4 text-left">Devices</th>
+                  <td class="border border-[#999999] px-4 py-4">Watch on one device simultaneously</td>
+                  <td class="border border-[#999999] px-4 py-4">Watch on two devices simultaneously</td>
+                  <td class="border border-[#999999] px-4 py-4">Watch on four devices simultaneously</td>
+                </tr>
+                <tr>
+                  <th class="border border-[#999999] px-4 py-4 text-left">Free Trial</th>
+                  <td class="border border-[#999999] px-4 py-4">7 Days</td>
+                  <td class="border border-[#999999] px-4 py-4">7 Days</td>
+                  <td class="border border-[#999999] px-4 py-4">7 Days</td>
+                </tr>
+                <tr class="">
+                  <th class="border border-[#999999] px-4 py-4 text-left">Cancel Anytime</th>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                </tr>
+                <tr>
+                  <th class="border border-[#999999] px-4 py-4 text-left">HDR</th>
+                  <td class="border border-[#999999] px-4 py-4">No</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                </tr>
+                <tr class="">
+                  <th class="border border-[#999999] px-4 py-4 text-left">Dolby Atmos</th>
+                  <td class="border border-[#999999] px-4 py-4">No</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                </tr>
+                <tr>
+                  <th class="border border-[#999999] px-4 py-4 text-left">Ad-Free</th>
+                  <td class="border border-[#999999] px-4 py-4">No</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes</td>
+                </tr>
+                <tr class="">
+                  <th class="border border-[#999999] px-4 py-4 text-left">Offline Viewing</th>
+                  <td class="border border-[#999999] px-4 py-4">No</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes, for select titles</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes, for all titles</td>
+                </tr>
+                <tr>
+                  <th class="border border-[#999999] px-4 py-4 text-left">Family Sharing</th>
+                  <td class="border border-[#999999] px-4 py-4">No</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes, up to 5 family members</td>
+                  <td class="border border-[#999999] px-4 py-4">Yes, up to 6 family members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          
+    </section>
+
+    <section class="mt-20 md:mt-36">
+            
+        <div style="background-image: url('./assets/Home/main/Free.png');" class="h-96 bg-center rounded flex">
+                <div class="flex flex-col md:flex-row items-center  justify-center md:justify-between w-full">
+                    <div class="flex flex-col items-center md:items-start justify-center text-center gap-[10px] md:gap-[14px] mt-[100px] mb-[50px] ms-10 md:ms-20 h-fit">
+                        <h2 class="text-white font-bold text-2xl md:text-5xl">Start your free trial today!</h2>
+                        <p class="text-sm md:text-lg font-light">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                    </div>
+                    <button class="text-white font-semibold text-sm md:text-lg bg-secondarybutton rounded me-0 md:me-20 py-[14px] md:py-[18px] px-5 md:px-6 hover:scale-105 duration-300">
+                        Start a Free Trail
+                    </button>
+                </div>
+            </div>
+    
+    </section>  
+</main>
+
+
+    
+    
+    
+
+<footer class="bg-[#0F0F0F] mt-20 md:mt-36 overflow-hidden">
+    <div class="wrapper grid grid-cols-2 sm:grid-cols-3 labtop:grid-cols-6 items-center justify-center">
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-12 md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Home</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Categories</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Devices</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Pricing</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-12 md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Movies</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Gernes</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Trending</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">New Release</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Popular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Shows</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Gernes</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Trending</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">New Release</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Popular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Support</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Subscription</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Plans</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Connect With Us</h5>
+            <ul class="flex justify-start items-center flex-wrap gap-[14px]">
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-700 hover:rounded duration-300"><img src="./assets/Home/footer/facebook.svg" alt=""></a>
+                </li>
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-400 hover:rounded duration-300"><img src="./assets/Home/footer/twitter.svg" alt=""></a>
+                </li>
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-700 hover:rounded duration-300"><img src="./assets/Home/footer/linkin.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

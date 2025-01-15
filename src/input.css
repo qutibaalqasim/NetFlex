@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html , body{
+    font-family: Manrope;
+}
+
+
+@layer base{
+    h1{
+        @apply font-bold text-[58px] text-white ;
+    }
+    h2{
+        @apply font-bold text-[38px] text-white leading-[150%];
+    }
+    p{
+        @apply font-light text-[#999999] mobile:text-sm md:text-sm lg:text-lg;
+    }
+}
+
+@layer components{
+    .wrapper{
+        @apply max-w-full w-[90%] m-auto;
+    }
+    
+    
+}
+

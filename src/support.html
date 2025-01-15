@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-mainPage">
+    <nav class="wrapper bg-transparent flex justify-between sticky top-5">
+        
+        <div class=" flex items-center gap-8 w-full navbar:w-fit justify-between ">
+            <div class="w-[116px] lg:w-[199px]">
+                <img src="./assets/Home/navbar/Logo.svg" alt="logo image" class="w-full">
+            </div>
+            <div id="menu-toggle" class="block navbar:hidden">
+                <button>
+                  <img src="./assets/Home/navbar/Icon.svg" alt="menu toggle">
+              </button>  
+              </div>
+          
+        </div>
+        <div id="menu" class="hidden navbar:flex items-center justify-between w-fit lg:w-full flex-col lg:flex-row absolute top-[50px] right-0
+        lg:static">
+                <ul class="flex gap-5 lg:gap-[30px] items-center lg:ms-[20%] flex-wrap flex-col navbar:flex-row py-3 px-5 bg-slate-500 lg:bg-[#0F0F0F] rounded-l lg:rounded border border-mainbutton">
+                    <li class="m-3">
+                        <a href="./index.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Home</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./Movies&Shows.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Movies & Shows</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./support.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Support</a>
+                    </li>
+                    <li class="m-3">
+                        <a href="./subscription.html" class="text-white opacity-100 p-[14px] hover:bg-mainbutton hover:rounded hover:my-4">Subscriptions</a>
+                    </li>
+                </ul>
+            <div class="flex gap-[30px] justify-center border-t rounded-l lg:border-none lg:rounded-none bg-slate-500 lg:bg-transparent">
+                <button class="size-[26px]">
+                    <img src="./assets/Home/navbar/search.svg" alt="search logo">
+                </button>
+                <button class="size-[26px]">
+                    <img src="./assets/Home/navbar/notifications.svg" alt="notifications logo">
+                </button>
+            </div>
+        
+        
+       
+    </div>
+    
+
+</nav>
+
+
+<main class="wrapper">
+
+    <section class="mt-20 md:mt-36">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <h1 class="text-white font-bold text-[28px] md:text-5xl pb-[10px] md:pb-[14px]">Welcome to our support page!</h1>
+                <p class="font-normal text-sm md:text-lg mb-[30px] md:mb-[50px]">We're here to help you with any problems you may be having with our product.</p>
+                <img src="./assets/support/header.svg" alt="">
+            </div>
+            <form action="" class="bg-[#0F0F0F] rounded-xl">
+                <div class="flex items-center justify-between flex-wrap gap-5 md:gap-12 px-6 md:px-12 py-6 md:py-12 ">
+                    <div class="flex flex-col w-[45%] gap-3 md:gap-4">
+                        <h5 class="text-white font-semibold text-base md:text-lg">First Name</h5>
+                        <div class="relative">
+                            <input type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-transparent rounded-lg border-1 border-mainbutton appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-lg px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">First Name</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[45%] gap-3 md:gap-4">
+                        <h5 class="text-white font-semibold text-base md:text-lg">Last Name</h5>
+                        <div class="relative">
+                            <input type="text" id="floating_outlined2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-transparent rounded-lg border-1 border-mainbutton appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label for="floating_outlined2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-lg px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between flex-wrap gap-5 md:gap-12 px-6 md:px-12 py-6 md:py-12 ">
+                    <div class="flex flex-col w-[45%] gap-3 md:gap-4">
+                        <h5 class="text-white font-semibold text-base md:text-lg">Email</h5>
+                        <div class="relative">
+                            <input type="text" id="floating_outlined3" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-transparent rounded-lg border-1 border-mainbutton appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label for="floating_outlined3" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-lg px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Email</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[45%] gap-3 md:gap-4">
+                        <h5 class="text-white font-semibold text-base md:text-lg">Phone Number</h5>
+                        <div class="flex items-center">
+                            <button id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-mainbutton border border-gray-300 rounded-s-lg hover:bg-[#333333] focus:ring-4 focus:outline-none focus:ring-white " type="button">
+                                <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/></mask><g mask="url(#a)"><path fill="#D02F44" fill-rule="evenodd" d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z" clip-rule="evenodd"/><path fill="#46467F" d="M0 .5h8.4v6.533H0z"/><g filter="url(#filter0_d_343_121520)"><path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd" d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z" clip-rule="evenodd"/></g></g><defs><linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#F0F0F0"/></linearGradient><filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape"/></filter></defs></svg>
+                            +1 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                            </button>
+                            <div id="dropdown-phone" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-52 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-phone-button">
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                            <span class="inline-flex items-center">
+                                                <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/></mask><g mask="url(#a)"><path fill="#D02F44" fill-rule="evenodd" d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z" clip-rule="evenodd"/><path fill="#46467F" d="M0 .5h8.4v6.533H0z"/><g filter="url(#filter0_d_343_121520)"><path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd" d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z" clip-rule="evenodd"/></g></g><defs><linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#F0F0F0"/></linearGradient><filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape"/></filter></defs></svg>
+                                                United States (+1)
+                                            </span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                            <span class="inline-flex items-center">
+                                                <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/></mask><g mask="url(#a)"><path fill="#0A17A7" d="M0 .5h19.6v14H0z"/><path fill="#fff" fill-rule="evenodd" d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z" clip-rule="evenodd"/><path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667" d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093"/><path fill="#E6273E" fill-rule="evenodd" d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z" clip-rule="evenodd"/></g></svg>
+                                                United Kingdom (+44)
+                                            </span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                            <span class="inline-flex items-center">
+                                                <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/></mask><g mask="url(#a)"><path fill="#0A17A7" d="M0 .5h19.6v14H0z"/><path fill="#fff" stroke="#fff" stroke-width=".667" d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z"/><path fill="url(#paint0_linear_374_135177)" fill-rule="evenodd" d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z" clip-rule="evenodd"/><path fill="url(#paint1_linear_374_135177)" fill-rule="evenodd" d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z" clip-rule="evenodd"/><path fill="#fff" fill-rule="evenodd" d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z" clip-rule="evenodd"/></g><defs><linearGradient id="paint0_linear_374_135177" x1="0" x2="0" y1=".5" y2="7.5" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#F0F0F0"/></linearGradient><linearGradient id="paint1_linear_374_135177" x1="0" x2="0" y1=".5" y2="7.033" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2E3B"/><stop offset="1" stop-color="#FC0D1B"/></linearGradient></defs></svg>
+                                                Australia (+61)
+                                            </span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                            <span class="inline-flex items-center">
+                                                <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/></mask><g mask="url(#a)"><path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z" clip-rule="evenodd"/><g filter="url(#filter0_d_374_135180)"><path fill="#F01515" fill-rule="evenodd" d="M0 9.833h19.6V5.167H0v4.666z" clip-rule="evenodd"/></g><g filter="url(#filter1_d_374_135180)"><path fill="#FFD521" fill-rule="evenodd" d="M0 14.5h19.6V9.833H0V14.5z" clip-rule="evenodd"/></g></g><defs><filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0" y="5.167" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape"/></filter><filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0" y="9.833" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape"/></filter></defs></svg>
+                                                Germany (+49)
+                                            </span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                            <span class="inline-flex items-center">
+                                                <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15"><rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff" stroke="#F5F5F5" stroke-width=".5" rx="1.75"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff" stroke="#fff" stroke-width=".5" rx="1.75"/></mask><g mask="url(#a)"><path fill="#F44653" d="M13.067.5H19.6v14h-6.533z"/><path fill="#1035BB" fill-rule="evenodd" d="M0 14.5h6.533V.5H0v14z" clip-rule="evenodd"/></g></svg>
+                                                France (+33)
+                                            </span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                            <span class="inline-flex items-center">
+                                                <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/><mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0" maskUnits="userSpaceOnUse"><rect width="19.6" height="14" y=".5" fill="#fff" rx="2"/></mask><g mask="url(#a)"><path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z" clip-rule="evenodd"/><g filter="url(#filter0_d_374_135180)"><path fill="#F01515" fill-rule="evenodd" d="M0 9.833h19.6V5.167H0v4.666z" clip-rule="evenodd"/></g><g filter="url(#filter1_d_374_135180)"><path fill="#FFD521" fill-rule="evenodd" d="M0 14.5h19.6V9.833H0V14.5z" clip-rule="evenodd"/></g></g><defs><filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0" y="5.167" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape"/></filter><filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0" y="9.833" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape"/></filter></defs></svg>
+                                                Germany (+49)
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <label for="phone-input" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone number:</label>
+                            <div class="relative w-full">
+                                <input type="text" id="phone-input" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="" required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[90%] m-auto flex flex-col items-center justify-center">
+                    <label for="message" class="block mb-2 font-semibold text-base md:text-lg text-white">Message</label>
+                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-white bg-mainbutton rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your Message"></textarea>
+                </div>
+                <div class="w-[90%] m-auto flex justify-between items-center flex-wrap py-5 md:py-[50px]">
+                    <div class="flex items-center mb-4">
+                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2">
+                        <label for="default-checkbox" class="ms-2 text-sm font-medium text-[#999999]">I agree with Terms of Use and Privacy Policy</label>
+                    </div>
+                    <button class="text-white font-semibold text-sm md:text-lg bg-secondarybutton rounded hover:scale-105 duration-200 px-6 py-[14px] md:py-[18px] w-full md:w-fit">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="mt-20 md:mt-36">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+            <div>
+                <h2 class="mobile:text-xl md:text-3xl">Frequently Asked Questions</h2>
+                <p class="mobile:text-sm md:text-sm mt-3">Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</p>
+            </div>
+            <button class="text-white bg-secondarybutton rounded py-[18px] px-6 font-semibold text-sm md:text-lg hover:scale-105 hover:shadow-current duration-200 ">
+                Ask a Question
+            </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-20">
+            <div>
+               
+                <div id="accordion-flush3" data-accordion="collapse" data-active-classes="bg-mainPage text-white border-b border-secondarybutton" data-inactive-classes="text-white border-b border-secondarybutton">
+                    <h2 id="accordion-flush-heading-1">
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                        <div class="flex items-center">
+                            <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">01</span>
+                            <span class="font-medium text-lg md:text-[22px] ">What is StreamVibe?</span>
+
+                        </div>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                    </button>
+                    </h2>
+                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                    <div class="py-3 md:py-5 border-b border-secondarybutton">
+                        <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                    </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                        <div class="flex items-center">
+                            <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">02</span>
+                            <span class="font-medium text-lg md:text-[22px] ">How much does StreamVibe cost?</span>
+                
+                        </div>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-3 md:py-5 border-b border-secondarybutton">
+                        <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                        <div class="flex items-center">
+                            <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">03</span>
+                            <span class="font-medium text-lg md:text-[22px] ">What content is available on StreamVibe?</span>
+                
+                        </div>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-3 md:py-5 border-b border-secondarybutton">
+                        <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-4">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+                        <div class="flex items-center">
+                            <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">04</span>
+                            <span class="font-medium text-lg md:text-[22px] ">How can I watch StreamVibe?</span>
+                
+                        </div>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                        <div class="py-3 md:py-5 border-b border-secondarybutton">
+                        <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div id="accordion-flush4" data-accordion="collapse" data-active-classes="bg-mainPage text-white border-b border-secondarybutton" data-inactive-classes="text-white border-b border-secondarybutton">
+                    <h2 id="accordion-flush-heading-5">
+                      <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+                        <div class="flex items-center">
+                            <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">05</span>
+                            <span class="font-medium text-lg md:text-[22px] ">How do I sign up for StreamVibe?</span>
+                
+                        </div>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                      </button>
+                    </h2>
+                    <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                      <div class="py-3 md:py-5 border-b border-secondarybutton">
+                        <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                      </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-6">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
+                          <div class="flex items-center">
+                              <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">06</span>
+                              <span class="font-medium text-lg md:text-[22px] ">What is the StreamVibe free trial?</span>
+                  
+                          </div>
+                          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                        <div class="py-3 md:py-5 border-b border-secondarybutton">
+                          <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                        </div>
+                      </div>
+                      <h2 id="accordion-flush-heading-7">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-7" aria-expanded="false" aria-controls="accordion-flush-body-7">
+                          <div class="flex items-center">
+                              <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">07</span>
+                              <span class="font-medium text-lg md:text-[22px] ">How do I contact StreamVibe customer support?</span>
+                  
+                          </div>
+                          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+                        <div class="py-3 md:py-5 border-b border-secondarybutton">
+                          <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                        </div>
+                      </div>
+                      <h2 id="accordion-flush-heading-8">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-white  gap-3" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
+                          <div class="flex items-center">
+                              <span class="mr-4 md:mr-5 bg-mainbutton p-3 md:p-5 rounded font-semibold text-base md:text-xl">08</span>
+                              <span class="font-medium text-lg md:text-[22px] ">What are the StreamVibe payment methods?</span>
+                  
+                          </div>
+                          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
+                        <div class="py-3 md:py-5 border-b border-secondarybutton">
+                          <p class="font-normal text-sm md:text-lg text-[#999999]">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 md:mt-36">
+            
+        <div style="background-image: url('./assets/Home/main/Free.png');" class="h-96 bg-center rounded flex">
+                <div class="flex flex-col md:flex-row items-center  justify-center md:justify-between w-full">
+                    <div class="flex flex-col items-center md:items-start justify-center text-center gap-[10px] md:gap-[14px] mt-[100px] mb-[50px] ms-10 md:ms-20 h-fit">
+                        <h2 class="text-white font-bold text-2xl md:text-5xl">Start your free trial today!</h2>
+                        <p class="text-sm md:text-lg font-light">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                    </div>
+                    <button class="text-white font-semibold text-sm md:text-lg bg-secondarybutton rounded me-0 md:me-20 py-[14px] md:py-[18px] px-5 md:px-6 hover:scale-105 duration-300">
+                        Start a Free Trail
+                    </button>
+                </div>
+            </div>
+    
+    </section>
+</main>
+
+<footer class="bg-[#0F0F0F] mt-20 md:mt-36 overflow-hidden">
+    <div class="wrapper grid grid-cols-2 sm:grid-cols-3 labtop:grid-cols-6 items-center justify-center">
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-12 md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Home</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Categories</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Devices</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Pricing</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-12 md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Movies</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Gernes</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Trending</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">New Release</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Popular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Shows</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Gernes</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Trending</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">New Release</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Popular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Support</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Subscription</h5>
+            <ul class="flex flex-col gap-2 md:gap-[14px]">
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Plans</a>
+                </li>
+                <li>
+                    <a href="" class="font-medium text-sm md:text-lg hover:text-secondarybutton duration-300">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-start items-start gap-4 md:gap-6 h-full mt-[30px] md:mt-24">
+            <h5 class="text-white font-semibold text-base md:text-xl">Connect With Us</h5>
+            <ul class="flex justify-start items-center flex-wrap gap-[14px]">
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-700 hover:rounded duration-300"><img src="./assets/Home/footer/facebook.svg" alt=""></a>
+                </li>
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-400 hover:rounded duration-300"><img src="./assets/Home/footer/twitter.svg" alt=""></a>
+                </li>
+                <li class="bg-mainPage rounded size-14 flex justify-center items-center">
+                    <a href="" class="hover:bg-blue-700 hover:rounded duration-300"><img src="./assets/Home/footer/linkin.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    
+<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
