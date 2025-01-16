@@ -5458,10 +5458,6 @@ html , body{
     gap: 30px;
   }
 
-  .md\:border{
-    border-width: 1px;
-  }
-
   .md\:p-5{
     padding: 1.25rem;
   }
