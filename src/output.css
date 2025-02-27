@@ -3689,6 +3689,10 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 100px;
 }
 
+.mt-\[20px\]{
+  margin-top: 20px;
+}
+
 .mt-\[30px\]{
   margin-top: 30px;
 }
@@ -3875,6 +3879,10 @@ details.collapse summary::-webkit-details-marker{
 
 .w-full{
   width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .flex-1{
@@ -4218,6 +4226,11 @@ details.collapse summary::-webkit-details-marker{
   background-color: rgb(15 15 15 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#1F1F1F\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity, 1));
@@ -4282,6 +4295,25 @@ details.collapse summary::-webkit-details-marker{
 
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-gradient-to-tr{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-mainbutton{
+  --tw-gradient-from: #1A1A1A var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(26 26 26 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-mainbutton{
+  --tw-gradient-to: rgb(26 26 26 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #1A1A1A var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-secondarybutton{
+  --tw-gradient-to: #E50000 var(--tw-gradient-to-position);
 }
 
 .bg-cover{
@@ -4435,6 +4467,11 @@ details.collapse summary::-webkit-details-marker{
   padding-bottom: 14px;
 }
 
+.py-\[18\.5px\]{
+  padding-top: 18.5px;
+  padding-bottom: 18.5px;
+}
+
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
@@ -4476,6 +4513,10 @@ details.collapse summary::-webkit-details-marker{
 
 .pb-\[10px\]{
   padding-bottom: 10px;
+}
+
+.pb-\[14px\]{
+  padding-bottom: 14px;
 }
 
 .pe-2{
@@ -5120,6 +5161,15 @@ html , body{
 }
 
 @media (min-width: 330px){
+  .mobile\:mt-\[30px\]{
+    margin-top: 30px;
+  }
+
+  .mobile\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .mobile\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -5277,6 +5327,10 @@ html , body{
     margin-top: 11rem;
   }
 
+  .md\:mt-48{
+    margin-top: 12rem;
+  }
+
   .md\:mt-5{
     margin-top: 1.25rem;
   }
@@ -5303,6 +5357,10 @@ html , body{
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:grid{
+    display: grid;
   }
 
   .md\:hidden{
@@ -5729,6 +5787,10 @@ html , body{
 @media (min-width: 1400px){
   .labtop\:mt-0{
     margin-top: 0px;
+  }
+
+  .labtop\:mt-12{
+    margin-top: 3rem;
   }
 
   .labtop\:grid-cols-3{
